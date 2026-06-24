@@ -1,4 +1,4 @@
-````markdown
+
 # Dimitrios Markoulis — Personal Portfolio
 
 This repository contains the source code for my personal portfolio website, built with GitHub Pages.
@@ -19,7 +19,6 @@ The portfolio will be available at:
 
 ```text
 https://dimitriosmarkoulis.github.io
-````
 
 ## Contact
 
