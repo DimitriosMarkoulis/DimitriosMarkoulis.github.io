@@ -293,7 +293,8 @@ body::before {
 .section-heading p,
 .project-card p,
 .card p,
-.contact-section p {
+.contact-section p,
+.repo-tile p {
   color: var(--muted);
   font-size: 17px;
 }
@@ -349,7 +350,8 @@ body::before {
 
 .card h3,
 .skill-group h3,
-.project-card h3 {
+.project-card h3,
+.repo-tile h3 {
   color: var(--text);
   letter-spacing: -0.04em;
 }
@@ -361,6 +363,165 @@ body::before {
 
 .featured-section {
   padding-top: 88px;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.repo-tile {
+  position: relative;
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid rgba(223, 229, 239, 0.95);
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(248, 251, 255, 0.86)),
+    radial-gradient(circle at top right, rgba(36, 87, 197, 0.14), transparent 18rem);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.repo-tile::after {
+  content: "";
+  position: absolute;
+  right: -44px;
+  bottom: -44px;
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  background: rgba(36, 87, 197, 0.07);
+}
+
+.repo-tile:hover {
+  transform: translateY(-5px);
+  border-color: rgba(36, 87, 197, 0.34);
+  box-shadow: var(--shadow);
+}
+
+.featured-repo {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(238, 243, 255, 0.82)),
+    radial-gradient(circle at top right, rgba(36, 87, 197, 0.18), transparent 18rem);
+}
+
+.profile-repo {
+  background:
+    linear-gradient(135deg, rgba(17, 24, 39, 0.97), rgba(35, 48, 74, 0.94));
+  border-color: transparent;
+}
+
+.profile-repo h3,
+.profile-repo p,
+.profile-repo .repo-link {
+  color: #ffffff;
+}
+
+.profile-repo .repo-type,
+.profile-repo .muted-status,
+.profile-repo .repo-tags span {
+  color: #dce7ff;
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.repo-topline,
+.repo-tags,
+.repo-link {
+  position: relative;
+  z-index: 1;
+}
+
+.repo-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.repo-type,
+.repo-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.repo-type {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+}
+
+.repo-status {
+  color: #0f5132;
+  background: #dcfce7;
+}
+
+.muted-status {
+  color: var(--muted-strong);
+  background: #f3f4f6;
+}
+
+.repo-tile h3 {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
+  font-size: 27px;
+  line-height: 1.12;
+}
+
+.repo-tile p {
+  position: relative;
+  z-index: 1;
+}
+
+.repo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: auto;
+}
+
+.repo-tags span {
+  padding: 8px 10px;
+  border: 1px solid rgba(36, 87, 197, 0.15);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.repo-link span {
+  transition: transform 0.2s ease;
+}
+
+.repo-link:hover span,
+.repo-link:focus-visible span {
+  transform: translateX(4px);
 }
 
 .project-list {
@@ -488,7 +649,8 @@ body::before {
     padding-top: 86px;
   }
 
-  .three-columns {
+  .three-columns,
+  .repo-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -520,7 +682,8 @@ body::before {
   .section-heading p,
   .project-card p,
   .card p,
-  .contact-section p {
+  .contact-section p,
+  .repo-tile p {
     font-size: 16px;
   }
 
@@ -539,7 +702,14 @@ body::before {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
+  .project-card,
+  .repo-topline {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .repo-tile {
+    min-height: auto;
+    padding: 24px;
   }
 }
