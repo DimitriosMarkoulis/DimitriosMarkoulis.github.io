@@ -1,0 +1,45 @@
+{
+  "owner": "DimitriosMarkoulis",
+  "projects": [
+    {
+      "name": "Bank Term Deposit Prediction",
+      "repo": "DimitriosMarkoulis/Bank-Term-Deposit-Prediction",
+      "url": "https://github.com/DimitriosMarkoulis/Bank-Term-Deposit-Prediction",
+      "category": "Machine Learning",
+      "status": "Portfolio case study",
+      "positioning": "Best project for classical ML, model evaluation, imbalanced classification, and deployment-minded repository structure.",
+      "files": ["README.md"],
+      "tags": ["Python", "Pandas", "Scikit-Learn", "Classification", "Model Evaluation", "MLflow", "FastAPI", "Docker"]
+    },
+    {
+      "name": "Athens Fuel Prices ETL",
+      "repo": "DimitriosMarkoulis/Athens-Fuel-Prices",
+      "url": "https://github.com/DimitriosMarkoulis/Athens-Fuel-Prices",
+      "category": "Data Engineering",
+      "status": "Portfolio case study",
+      "positioning": "Best project for ETL, public data extraction, validation, database loading, and automation.",
+      "files": ["README.md"],
+      "tags": ["Python", "ETL", "PostgreSQL", "Data Validation", "Automation"]
+    },
+    {
+      "name": "IMDB Sentiment Analysis",
+      "repo": "DimitriosMarkoulis/imdb-sentiment-analysis",
+      "url": "https://github.com/DimitriosMarkoulis/imdb-sentiment-analysis",
+      "category": "NLP",
+      "status": "Learning-to-production project",
+      "positioning": "Best project for NLP fundamentals, text classification, TF-IDF baselines, and progressive experimentation.",
+      "files": ["README.md"],
+      "tags": ["NLP", "Text Classification", "TF-IDF", "Logistic Regression", "Machine Learning"]
+    },
+    {
+      "name": "Personal Data & AI Portfolio Website",
+      "repo": "DimitriosMarkoulis/DimitriosMarkoulis.github.io",
+      "url": "https://github.com/DimitriosMarkoulis/DimitriosMarkoulis.github.io",
+      "category": "AI Product / Portfolio",
+      "status": "Live portfolio system",
+      "positioning": "Best project for product thinking, personal positioning, UX, chatbot integration, and AI assistant architecture.",
+      "files": ["README.md", "index.html", "chatbot.js", "rag-backend/README.md"],
+      "tags": ["GitHub Pages", "JavaScript", "UX", "RAG", "LLM App", "Portfolio"]
+    }
+  ]
+}
