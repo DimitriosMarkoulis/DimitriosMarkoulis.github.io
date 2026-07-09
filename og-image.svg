@@ -1,0 +1,35 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816"/>
+      <stop offset="0.55" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#160828"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="120" x2="1080" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#8A2BE2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="160" cy="110" r="220" fill="#00E5FF" opacity="0.16"/>
+  <circle cx="1040" cy="540" r="260" fill="#8A2BE2" opacity="0.20"/>
+  <path d="M90 92H1110V538H90V92Z" fill="white" fill-opacity="0.035" stroke="white" stroke-opacity="0.10" stroke-width="2"/>
+  <rect x="120" y="125" width="214" height="42" rx="21" fill="#00E5FF" fill-opacity="0.12" stroke="#00E5FF" stroke-opacity="0.30"/>
+  <text x="147" y="153" fill="#00E5FF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="2">PORTFOLIO</text>
+  <text x="120" y="258" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="900" letter-spacing="-3">Dimitrios Markoulis</text>
+  <text x="120" y="326" fill="url(#accent)" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">Economics → Data Science → AI Engineering</text>
+  <text x="120" y="395" fill="#D0D7E8" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="500">BI, Machine Learning, RAG systems, automation, and practical</text>
+  <text x="120" y="432" fill="#D0D7E8" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="500">AI solutions for business and procurement transformation.</text>
+  <g transform="translate(120 485)">
+    <rect width="112" height="42" rx="21" fill="#0F172A" stroke="#00E5FF" stroke-opacity="0.35"/>
+    <text x="28" y="28" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">Python</text>
+    <rect x="126" width="96" height="42" rx="21" fill="#0F172A" stroke="#00E5FF" stroke-opacity="0.35"/>
+    <text x="157" y="28" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">SQL</text>
+    <rect x="236" width="118" height="42" rx="21" fill="#0F172A" stroke="#00E5FF" stroke-opacity="0.35"/>
+    <text x="263" y="28" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">Power BI</text>
+    <rect x="368" width="84" height="42" rx="21" fill="#0F172A" stroke="#00E5FF" stroke-opacity="0.35"/>
+    <text x="395" y="28" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">RAG</text>
+    <rect x="466" width="84" height="42" rx="21" fill="#0F172A" stroke="#00E5FF" stroke-opacity="0.35"/>
+    <text x="494" y="28" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">ML</text>
+  </g>
+</svg>
