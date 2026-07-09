@@ -64,372 +64,410 @@
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="skills.css" />
+  <link rel="stylesheet" href="ux.css" />
 </head>
 <body>
-  <!-- HERO SECTION -->
-  <header class="hero" id="top">
-    <div class="hero-content">
-      <p class="eyebrow">Economics • Data Science • AI Engineering</p>
-      <h1>DIMITRIOS MARKOULIS</h1>
-      <p class="tagline">Economics-trained Data & AI Practitioner | BI, ML & Procurement Tech</p>
-      <p class="subtitle">
-        Building practical data and AI solutions across business intelligence, machine learning,
-        retrieval-augmented generation, workflow automation, and production-ready analytics systems.
-      </p>
-      <div class="hero-buttons">
-        <a href="https://github.com/DimitriosMarkoulis" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
-        <a href="https://www.linkedin.com/in/dimitrios-markoulis-67937094/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-        <a href="mailto:dimmark995@gmail.com">📧 Email</a>
-      </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="nav-brand" href="#top" aria-label="Back to top">DM<span>.</span></a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu" />
+    <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#build">Value</a>
+      <a href="#skills">Skills</a>
+      <a href="#featured">Featured</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </div>
-  </header>
+  </nav>
 
-  <!-- STATS -->
-  <section class="stats" aria-label="Portfolio highlights">
-    <div class="stat-card">
-      <h3>ECON</h3>
-      <p>Business, incentives & analytical thinking</p>
-    </div>
-    <div class="stat-card">
-      <h3>BI</h3>
-      <p>Power BI dashboards & KPIs</p>
-    </div>
-    <div class="stat-card">
-      <h3>ML</h3>
-      <p>Classical ML to deployment</p>
-    </div>
-    <div class="stat-card">
-      <h3>AI</h3>
-      <p>RAG, LLM apps & assistants</p>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>From Economics to Data Science</h2>
-    <p>
-      My path into Data Science did not start from a traditional software engineering background.
-      It started from Economics, where I learned to think in terms of systems, incentives, constraints,
-      growth, productivity, and measurable business outcomes. That foundation still shapes the way I approach data problems today.
-    </p>
-    <p>
-      Over time, I moved from economic theory and quantitative analysis into Python, SQL, Power BI,
-      machine learning, and applied AI. In my work at PPC, I found the bridge between business and technology:
-      turning messy operational processes into structured datasets, dashboards, automations, and AI-enabled workflows.
-    </p>
-    <p>
-      I am now building a portfolio that reflects that journey: from economics-informed analysis to production-minded
-      Data Science and AI Engineering projects. My goal is not just to test models, but to design useful systems that connect
-      data, business context, and real decision-making.
-    </p>
-
-    <div class="build-grid about-journey" aria-label="Career journey">
-      <div class="build-card">
-        <h3>📘 Economics Foundation</h3>
-        <p>Started with economic theory, quantitative reasoning, business context, and an interest in how data explains real-world systems.</p>
-      </div>
-      <div class="build-card">
-        <h3>📊 Analytics Bridge</h3>
-        <p>Moved into SQL, Python, Excel, and Power BI to automate reporting, structure operational data, and create decision-ready dashboards.</p>
-      </div>
-      <div class="build-card">
-        <h3>🧠 Data Science Direction</h3>
-        <p>Expanded into machine learning, NLP, RAG systems, and AI applications with a focus on practical business value and deployment readiness.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT I BUILD -->
-  <section id="build">
-    <h2>How I Create Value</h2>
-    <div class="build-grid">
-      <div class="build-card">
-        <h3>🤖 AI Assistants</h3>
-        <p>LLM-powered assistants for knowledge retrieval, process guidance, and user support.</p>
-      </div>
-      <div class="build-card">
-        <h3>📚 RAG Systems</h3>
-        <p>Document-aware AI systems that combine retrieval, metadata, evaluation, and generation.</p>
-      </div>
-      <div class="build-card">
-        <h3>📊 BI & KPI Reporting</h3>
-        <p>Executive dashboards, operational views, and performance measurement systems.</p>
-      </div>
-      <div class="build-card">
-        <h3>⚙️ Data Pipelines</h3>
-        <p>ETL workflows, validation steps, database loading, and automation for repeatable analytics.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <p class="skills-intro">
-      Compact categories grouped by practical depth, so recruiters can scan both my core toolkit and the areas I am actively developing.
-    </p>
-
-    <div class="skill-matrix" aria-label="Structured technical skills">
-      <article class="skill-category core">
-        <div class="skill-header">
-          <div>
-            <h3>Programming & Analysis</h3>
-            <p>Core tools for analysis, transformation, notebooks, and data problem solving.</p>
-          </div>
-          <span class="skill-level">Strong</span>
-        </div>
-        <div class="skill-items">
-          <span>Python</span>
-          <span>SQL</span>
-          <span>Pandas</span>
-          <span>NumPy</span>
-          <span>Jupyter</span>
-        </div>
-      </article>
-
-      <article class="skill-category bi">
-        <div class="skill-header">
-          <div>
-            <h3>BI & Reporting</h3>
-            <p>Dashboards, KPIs, executive reporting, and operational monitoring.</p>
-          </div>
-          <span class="skill-level">Strong</span>
-        </div>
-        <div class="skill-items">
-          <span>Power BI</span>
-          <span>DAX</span>
-          <span>Excel</span>
-          <span>KPI Design</span>
-          <span>Data Modeling</span>
-        </div>
-      </article>
-
-      <article class="skill-category ml">
-        <div class="skill-header">
-          <div>
-            <h3>ML Foundations</h3>
-            <p>Classical ML workflow from features to model comparison and evaluation.</p>
-          </div>
-          <span class="skill-level">Applied</span>
-        </div>
-        <div class="skill-items">
-          <span>Scikit-Learn</span>
-          <span>Feature Engineering</span>
-          <span>Classification</span>
-          <span>Regression</span>
-          <span>Model Evaluation</span>
-        </div>
-      </article>
-
-      <article class="skill-category rag">
-        <div class="skill-header">
-          <div>
-            <h3>NLP, RAG & LLMs</h3>
-            <p>Document-aware AI, retrieval, prompting, and knowledge assistants.</p>
-          </div>
-          <span class="skill-level">Applied</span>
-        </div>
-        <div class="skill-items">
-          <span>NLP</span>
-          <span>RAG Systems</span>
-          <span>LLM Workflows</span>
-          <span>Embeddings</span>
-          <span>Prompt Engineering</span>
-        </div>
-      </article>
-
-      <article class="skill-category apps">
-        <div class="skill-header">
-          <div>
-            <h3>AI Apps & Interfaces</h3>
-            <p>Interfaces and app layers for making models usable by real users.</p>
-          </div>
-          <span class="skill-level">Building</span>
-        </div>
-        <div class="skill-items">
-          <span>Streamlit</span>
-          <span>FastAPI</span>
-          <span>API Design</span>
-          <span>AI Assistants</span>
-          <span>Agentic Workflows</span>
-        </div>
-      </article>
-
-      <article class="skill-category engineering">
-        <div class="skill-header">
-          <div>
-            <h3>Engineering & MLOps</h3>
-            <p>Reproducible projects, tracking, containers, and deployment readiness.</p>
-          </div>
-          <span class="skill-level">Building</span>
-        </div>
-        <div class="skill-items">
-          <span>GitHub</span>
-          <span>GitHub Actions</span>
-          <span>Docker</span>
-          <span>MLflow</span>
-          <span>Project Structure</span>
-        </div>
-      </article>
-
-      <article class="skill-category data">
-        <div class="skill-header">
-          <div>
-            <h3>Data Engineering</h3>
-            <p>Data extraction, cleaning, validation, storage, and repeatable pipelines.</p>
-          </div>
-          <span class="skill-level">Applied</span>
-        </div>
-        <div class="skill-items">
-          <span>ETL</span>
-          <span>PostgreSQL</span>
-          <span>SQLite</span>
-          <span>Data Validation</span>
-          <span>Automation</span>
-        </div>
-      </article>
-
-      <article class="skill-category domain">
-        <div class="skill-header">
-          <div>
-            <h3>Business & ERP Context</h3>
-            <p>Domain knowledge that connects analytics and AI to operational decisions.</p>
-          </div>
-          <span class="skill-level">Professional</span>
-        </div>
-        <div class="skill-items">
-          <span>Economics</span>
-          <span>Procurement Analytics</span>
-          <span>SAP Ariba</span>
-          <span>SAP S/4HANA</span>
-          <span>Process Design</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- FEATURED PROJECT -->
-  <section id="featured">
-    <h2>⭐ Featured Project</h2>
-    <div class="project featured-project">
-      <h3>🏦 Bank Term Deposit Prediction</h3>
-      <div class="gallery">
-        <div class="screenshot-card">
-          <span>01</span>
-          <strong>EDA & Business Framing</strong>
-          <p>Campaign, client, and conversion analysis.</p>
-        </div>
-        <div class="screenshot-card">
-          <span>02</span>
-          <strong>ML Workflow</strong>
-          <p>Preprocessing, model comparison, and evaluation.</p>
-        </div>
-        <div class="screenshot-card">
-          <span>03</span>
-          <strong>Production Mindset</strong>
-          <p>Repository structure, tracking, and deployment path.</p>
+  <main id="main">
+    <!-- HERO SECTION -->
+    <header class="hero" id="top">
+      <div class="hero-content">
+        <p class="eyebrow">Economics • Data Science • AI Engineering</p>
+        <h1>DIMITRIOS MARKOULIS</h1>
+        <p class="tagline">Economics-trained Data & AI Practitioner | BI, ML & Procurement Tech</p>
+        <p class="subtitle">
+          Building practical data and AI solutions across business intelligence, machine learning,
+          retrieval-augmented generation, workflow automation, and production-ready analytics systems.
+        </p>
+        <div class="hero-buttons">
+          <a class="has-tooltip" data-tooltip="Explore my project repositories" href="https://github.com/DimitriosMarkoulis" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+          <a class="has-tooltip" data-tooltip="Connect with me on LinkedIn" href="https://www.linkedin.com/in/dimitrios-markoulis-67937094/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+          <a class="has-tooltip" data-tooltip="Send me an email" href="mailto:dimmark995@gmail.com">📧 Email</a>
         </div>
       </div>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Portfolio highlights">
+      <div class="stat-card">
+        <h3>ECON</h3>
+        <p>Business, incentives & analytical thinking</p>
+      </div>
+      <div class="stat-card">
+        <h3>BI</h3>
+        <p>Power BI dashboards & KPIs</p>
+      </div>
+      <div class="stat-card">
+        <h3>ML</h3>
+        <p>Classical ML to deployment</p>
+      </div>
+      <div class="stat-card">
+        <h3>AI</h3>
+        <p>RAG, LLM apps & assistants</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>From Economics to Data Science</h2>
       <p>
-        End-to-end machine learning project for predicting term deposit subscription after a marketing campaign.
-        The project is positioned to demonstrate classical ML fundamentals, imbalanced classification,
-        evaluation strategy, and business interpretation.
+        My path into Data Science did not start from a traditional software engineering background.
+        It started from Economics, where I learned to think in terms of systems, incentives, constraints,
+        growth, productivity, and measurable business outcomes. That foundation still shapes the way I approach data problems today.
       </p>
-      <div class="buttons">
-        <a href="https://github.com/DimitriosMarkoulis/Bank-Term-Deposit-Prediction" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>⛽ Athens Fuel Prices ETL</h3>
-      <div class="gallery">
-        <div class="screenshot-card"><span>ETL</span><strong>PDF to Data</strong><p>Extract structured fuel prices from public reports.</p></div>
-        <div class="screenshot-card"><span>DB</span><strong>PostgreSQL Load</strong><p>Validated outputs ready for analysis.</p></div>
-      </div>
       <p>
-        Data engineering pipeline that converts public fuel price PDFs into structured outputs,
-        validates records, and prepares them for database loading and analytics.
+        Over time, I moved from economic theory and quantitative analysis into Python, SQL, Power BI,
+        machine learning, and applied AI. In my work at PPC, I found the bridge between business and technology:
+        turning messy operational processes into structured datasets, dashboards, automations, and AI-enabled workflows.
       </p>
-      <div class="buttons">
-        <a href="https://github.com/DimitriosMarkoulis/Athens-Fuel-Prices" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <h3>🎬 IMDB Sentiment Analysis</h3>
-      <div class="gallery">
-        <div class="screenshot-card"><span>NLP</span><strong>Text Classification</strong><p>From TF-IDF baselines to advanced experiments.</p></div>
-        <div class="screenshot-card"><span>ML</span><strong>Model Comparison</strong><p>Clear experiment matrix and learning path.</p></div>
-      </div>
       <p>
-        NLP learning repository for sentiment classification experiments, designed to show progression
-        from classic machine learning baselines to more sophisticated text modeling approaches.
+        I am now building a portfolio that reflects that journey: from economics-informed analysis to production-minded
+        Data Science and AI Engineering projects. My goal is not just to test models, but to design useful systems that connect
+        data, business context, and real decision-making.
       </p>
-      <div class="buttons">
-        <a href="https://github.com/DimitriosMarkoulis/imdb-sentiment-analysis" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+      <div class="build-grid about-journey" aria-label="Career journey">
+        <div class="build-card">
+          <h3>📘 Economics Foundation</h3>
+          <p>Started with economic theory, quantitative reasoning, business context, and an interest in how data explains real-world systems.</p>
+        </div>
+        <div class="build-card">
+          <h3>📊 Analytics Bridge</h3>
+          <p>Moved into SQL, Python, Excel, and Power BI to automate reporting, structure operational data, and create decision-ready dashboards.</p>
+        </div>
+        <div class="build-card">
+          <h3>🧠 Data Science Direction</h3>
+          <p>Expanded into machine learning, NLP, RAG systems, and AI applications with a focus on practical business value and deployment readiness.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>📈 Procurement Analytics & AI Enablement</h3>
-      <div class="gallery">
-        <div class="screenshot-card"><span>BI</span><strong>Operational KPIs</strong><p>Power BI dashboards and process visibility.</p></div>
-        <div class="screenshot-card"><span>AI</span><strong>Knowledge Assistants</strong><p>Manual-aware support and workflow guidance.</p></div>
+    <!-- WHAT I BUILD -->
+    <section id="build">
+      <h2>How I Create Value</h2>
+      <div class="build-grid">
+        <div class="build-card">
+          <h3>🤖 AI Assistants</h3>
+          <p>LLM-powered assistants for knowledge retrieval, process guidance, and user support.</p>
+        </div>
+        <div class="build-card">
+          <h3>📚 RAG Systems</h3>
+          <p>Document-aware AI systems that combine retrieval, metadata, evaluation, and generation.</p>
+        </div>
+        <div class="build-card">
+          <h3>📊 BI & KPI Reporting</h3>
+          <p>Executive dashboards, operational views, and performance measurement systems.</p>
+        </div>
+        <div class="build-card">
+          <h3>⚙️ Data Pipelines</h3>
+          <p>ETL workflows, validation steps, database loading, and automation for repeatable analytics.</p>
+        </div>
       </div>
-      <p>
-        Workstream focused on applying analytics, automation, and AI to procurement processes,
-        supplier onboarding, SAP Ariba support, reporting, and decision enablement.
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <p class="skills-intro">
+        Compact categories grouped by practical depth, so recruiters can scan both my core toolkit and the areas I am actively developing.
       </p>
-      <div class="buttons">
-        <a href="https://github.com/DimitriosMarkoulis?tab=repositories" target="_blank" rel="noopener noreferrer">View Repositories</a>
+
+      <div class="skill-matrix" aria-label="Structured technical skills">
+        <article class="skill-category core">
+          <div class="skill-header">
+            <div>
+              <h3>Programming & Analysis</h3>
+              <p>Core tools for analysis, transformation, notebooks, and data problem solving.</p>
+            </div>
+            <span class="skill-level">Strong</span>
+          </div>
+          <div class="skill-items">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Jupyter</span>
+          </div>
+        </article>
+
+        <article class="skill-category bi">
+          <div class="skill-header">
+            <div>
+              <h3>BI & Reporting</h3>
+              <p>Dashboards, KPIs, executive reporting, and operational monitoring.</p>
+            </div>
+            <span class="skill-level">Strong</span>
+          </div>
+          <div class="skill-items">
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>Excel</span>
+            <span>KPI Design</span>
+            <span>Data Modeling</span>
+          </div>
+        </article>
+
+        <article class="skill-category ml">
+          <div class="skill-header">
+            <div>
+              <h3>ML Foundations</h3>
+              <p>Classical ML workflow from features to model comparison and evaluation.</p>
+            </div>
+            <span class="skill-level">Applied</span>
+          </div>
+          <div class="skill-items">
+            <span>Scikit-Learn</span>
+            <span>Feature Engineering</span>
+            <span>Classification</span>
+            <span>Regression</span>
+            <span>Model Evaluation</span>
+          </div>
+        </article>
+
+        <article class="skill-category rag">
+          <div class="skill-header">
+            <div>
+              <h3>NLP, RAG & LLMs</h3>
+              <p>Document-aware AI, retrieval, prompting, and knowledge assistants.</p>
+            </div>
+            <span class="skill-level">Applied</span>
+          </div>
+          <div class="skill-items">
+            <span>NLP</span>
+            <span>RAG Systems</span>
+            <span>LLM Workflows</span>
+            <span>Embeddings</span>
+            <span>Prompt Engineering</span>
+          </div>
+        </article>
+
+        <article class="skill-category apps">
+          <div class="skill-header">
+            <div>
+              <h3>AI Apps & Interfaces</h3>
+              <p>Interfaces and app layers for making models usable by real users.</p>
+            </div>
+            <span class="skill-level">Building</span>
+          </div>
+          <div class="skill-items">
+            <span>Streamlit</span>
+            <span>FastAPI</span>
+            <span>API Design</span>
+            <span>AI Assistants</span>
+            <span>Agentic Workflows</span>
+          </div>
+        </article>
+
+        <article class="skill-category engineering">
+          <div class="skill-header">
+            <div>
+              <h3>Engineering & MLOps</h3>
+              <p>Reproducible projects, tracking, containers, and deployment readiness.</p>
+            </div>
+            <span class="skill-level">Building</span>
+          </div>
+          <div class="skill-items">
+            <span>GitHub</span>
+            <span>GitHub Actions</span>
+            <span>Docker</span>
+            <span>MLflow</span>
+            <span>Project Structure</span>
+          </div>
+        </article>
+
+        <article class="skill-category data">
+          <div class="skill-header">
+            <div>
+              <h3>Data Engineering</h3>
+              <p>Data extraction, cleaning, validation, storage, and repeatable pipelines.</p>
+            </div>
+            <span class="skill-level">Applied</span>
+          </div>
+          <div class="skill-items">
+            <span>ETL</span>
+            <span>PostgreSQL</span>
+            <span>SQLite</span>
+            <span>Data Validation</span>
+            <span>Automation</span>
+          </div>
+        </article>
+
+        <article class="skill-category domain">
+          <div class="skill-header">
+            <div>
+              <h3>Business & ERP Context</h3>
+              <p>Domain knowledge that connects analytics and AI to operational decisions.</p>
+            </div>
+            <span class="skill-level">Professional</span>
+          </div>
+          <div class="skill-items">
+            <span>Economics</span>
+            <span>Procurement Analytics</span>
+            <span>SAP Ariba</span>
+            <span>SAP S/4HANA</span>
+            <span>Process Design</span>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="project compact-card">
-      <h3>Procurement Data Analyst & AI Enablement | PPC S.A.</h3>
-      <p>
-        Supporting procurement transformation through SAP Ariba/SAP S/4HANA rollout activities,
-        UAT, reporting, data validation, stakeholder enablement, Power BI dashboards, automation,
-        and applied AI experimentation.
-      </p>
-    </div>
-    <div class="project compact-card">
-      <h3>ERP Data & Reporting Specialist | N.N. Sweetland</h3>
-      <p>
-        Worked with ERP data, reporting workflows, data quality, and operational analysis in a business environment.
-      </p>
-    </div>
-  </section>
+    <!-- FEATURED PROJECT -->
+    <section id="featured">
+      <h2>⭐ Featured Project</h2>
+      <div class="project featured-project">
+        <h3>🏦 Bank Term Deposit Prediction</h3>
+        <div class="gallery">
+          <div class="screenshot-card">
+            <span>01</span>
+            <strong>EDA & Business Framing</strong>
+            <p>Campaign, client, and conversion analysis.</p>
+          </div>
+          <div class="screenshot-card">
+            <span>02</span>
+            <strong>ML Workflow</strong>
+            <p>Preprocessing, model comparison, and evaluation.</p>
+          </div>
+          <div class="screenshot-card">
+            <span>03</span>
+            <strong>Production Mindset</strong>
+            <p>Repository structure, tracking, and deployment path.</p>
+          </div>
+        </div>
+        <p>
+          End-to-end machine learning project for predicting term deposit subscription after a marketing campaign.
+          The project is positioned to demonstrate classical ML fundamentals, imbalanced classification,
+          evaluation strategy, and business interpretation.
+        </p>
+        <div class="buttons">
+          <a href="https://github.com/DimitriosMarkoulis/Bank-Term-Deposit-Prediction" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- CURRENT FOCUS -->
-  <section id="learning">
-    <h2>Currently Deepening</h2>
-    <div class="skills">
-      <span>RAG Evaluation</span>
-      <span>MLOps Workflows</span>
-      <span>Cloud Data Platforms</span>
-      <span>Agentic AI Workflows</span>
-      <span>System Design for AI Apps</span>
-      <span>Portfolio-grade CI/CD</span>
-    </div>
-  </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 Email: <a href="mailto:dimmark995@gmail.com">dimmark995@gmail.com</a></p>
-    <p>💻 GitHub: <a href="https://github.com/DimitriosMarkoulis" target="_blank" rel="noopener noreferrer">github.com/DimitriosMarkoulis</a></p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/dimitrios-markoulis-67937094/" target="_blank" rel="noopener noreferrer">linkedin.com/in/dimitrios-markoulis-67937094</a></p>
-  </section>
+      <div class="project">
+        <h3>⛽ Athens Fuel Prices ETL</h3>
+        <div class="gallery">
+          <div class="screenshot-card"><span>ETL</span><strong>PDF to Data</strong><p>Extract structured fuel prices from public reports.</p></div>
+          <div class="screenshot-card"><span>DB</span><strong>PostgreSQL Load</strong><p>Validated outputs ready for analysis.</p></div>
+        </div>
+        <p>
+          Data engineering pipeline that converts public fuel price PDFs into structured outputs,
+          validates records, and prepares them for database loading and analytics.
+        </p>
+        <div class="buttons">
+          <a href="https://github.com/DimitriosMarkoulis/Athens-Fuel-Prices" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>🎬 IMDB Sentiment Analysis</h3>
+        <div class="gallery">
+          <div class="screenshot-card"><span>NLP</span><strong>Text Classification</strong><p>From TF-IDF baselines to advanced experiments.</p></div>
+          <div class="screenshot-card"><span>ML</span><strong>Model Comparison</strong><p>Clear experiment matrix and learning path.</p></div>
+        </div>
+        <p>
+          NLP learning repository for sentiment classification experiments, designed to show progression
+          from classic machine learning baselines to more sophisticated text modeling approaches.
+        </p>
+        <div class="buttons">
+          <a href="https://github.com/DimitriosMarkoulis/imdb-sentiment-analysis" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>📈 Procurement Analytics & AI Enablement</h3>
+        <div class="gallery">
+          <div class="screenshot-card"><span>BI</span><strong>Operational KPIs</strong><p>Power BI dashboards and process visibility.</p></div>
+          <div class="screenshot-card"><span>AI</span><strong>Knowledge Assistants</strong><p>Manual-aware support and workflow guidance.</p></div>
+        </div>
+        <p>
+          Workstream focused on applying analytics, automation, and AI to procurement processes,
+          supplier onboarding, SAP Ariba support, reporting, and decision enablement.
+        </p>
+        <div class="buttons">
+          <a href="https://github.com/DimitriosMarkoulis?tab=repositories" target="_blank" rel="noopener noreferrer">View Repositories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="project compact-card">
+        <h3>Procurement Data Analyst & AI Enablement | PPC S.A.</h3>
+        <p>
+          Supporting procurement transformation through SAP Ariba/SAP S/4HANA rollout activities,
+          UAT, reporting, data validation, stakeholder enablement, Power BI dashboards, automation,
+          and applied AI experimentation.
+        </p>
+      </div>
+      <div class="project compact-card">
+        <h3>ERP Data & Reporting Specialist | N.N. Sweetland</h3>
+        <p>
+          Worked with ERP data, reporting workflows, data quality, and operational analysis in a business environment.
+        </p>
+      </div>
+    </section>
+
+    <!-- CURRENT FOCUS -->
+    <section id="learning">
+      <h2>Currently Deepening</h2>
+      <div class="skills">
+        <span>RAG Evaluation</span>
+        <span>MLOps Workflows</span>
+        <span>Cloud Data Platforms</span>
+        <span>Agentic AI Workflows</span>
+        <span>System Design for AI Apps</span>
+        <span>Portfolio-grade CI/CD</span>
+      </div>
+    </section>
+
+    <section class="contact-strip" aria-label="Contact call to action">
+      <div>
+        <p class="cta-kicker">Open to data, AI and analytics opportunities</p>
+        <h2>Let’s build something useful with data.</h2>
+        <p>
+          Reach out for AI engineering, data science, business intelligence, procurement analytics,
+          or automation-focused conversations.
+        </p>
+      </div>
+      <a class="cta-button has-tooltip" data-tooltip="Start an email conversation" href="mailto:dimmark995@gmail.com">Contact me</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:dimmark995@gmail.com">dimmark995@gmail.com</a></p>
+      <p>💻 GitHub: <a href="https://github.com/DimitriosMarkoulis" target="_blank" rel="noopener noreferrer">github.com/DimitriosMarkoulis</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/dimitrios-markoulis-67937094/" target="_blank" rel="noopener noreferrer">linkedin.com/in/dimitrios-markoulis-67937094</a></p>
+    </section>
+  </main>
+
+  <a class="floating-contact" href="#contact" aria-label="Jump to contact section">✉ Contact</a>
 
   <footer>
     <p>Designed & Developed by Dimitrios Markoulis</p>
