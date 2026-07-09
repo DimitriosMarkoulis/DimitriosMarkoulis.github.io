@@ -1,3 +1,6 @@
+const RAG_BACKEND_URL = 'https://your-rag-backend.example.com';
+const USE_RAG_BACKEND = false;
+
 const portfolioBotKnowledge = [
   {
     keywords: ['project', 'projects', 'portfolio', 'github', 'repo', 'repositories'],
@@ -13,7 +16,7 @@ const portfolioBotKnowledge = [
   },
   {
     keywords: ['rag', 'llm', 'nlp', 'ai', 'chatbot', 'assistant', 'agent'],
-    answer: `My AI direction includes RAG systems, LLM workflows, document-aware assistants, prompt engineering, embeddings, and AI apps. I am especially interested in AI systems that help business users retrieve knowledge and complete workflows.`
+    answer: `My AI direction includes RAG systems, LLM workflows, document-aware assistants, prompt engineering, embeddings, and AI apps. I am especially interested in AI systems that help business users retrieve knowledge and complete workflows. A RAG backend scaffold has been added so this chatbot can answer from actual GitHub project documentation once deployed.`
   },
   {
     keywords: ['data engineering', 'etl', 'postgresql', 'sqlite', 'pipeline', 'automation'],
@@ -39,9 +42,43 @@ const portfolioBotKnowledge = [
 
 const fallbackAnswers = [
   `I can help you quickly understand Dimitrios' skills, projects, AI direction, professional experience, and contact options. Try asking: "What projects has he built?"`,
-  `Good question. This lightweight portfolio bot currently answers from predefined portfolio knowledge. A future version can connect to a real LLM backend for deeper answers.`,
+  `Good question. This portfolio bot has a RAG backend scaffold ready. Until the backend is deployed, I answer from local portfolio knowledge.`,
   `Try one of these topics: projects, skills, machine learning, RAG, data engineering, procurement analytics, or contact.`
 ];
+
+async function askRagBackend(question) {
+  if (!USE_RAG_BACKEND || !RAG_BACKEND_URL || RAG_BACKEND_URL.includes('example.com')) {
+    return null;
+  }
+
+  const response = await fetch(`${RAG_BACKEND_URL.replace(/\/$/, '')}/api/chat`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ message: question, top_k: 5 })
+  });
+
+  if (!response.ok) {
+    throw new Error(`RAG backend returned ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data.answer;
+}
+
+function getLocalBotAnswer(question) {
+  const normalized = question.toLowerCase();
+  const match = portfolioBotKnowledge.find(item =>
+    item.keywords.some(keyword => normalized.includes(keyword))
+  );
+
+  if (match) {
+    return match.answer;
+  }
+
+  return fallbackAnswers[Math.floor(Math.random() * fallbackAnswers.length)];
+}
 
 function createPortfolioChatbot() {
   const launcher = document.createElement('button');
@@ -92,31 +129,26 @@ function createPortfolioChatbot() {
     message.textContent = text;
     messages.appendChild(message);
     messages.scrollTop = messages.scrollHeight;
+    return message;
   }
 
-  function getBotAnswer(question) {
-    const normalized = question.toLowerCase();
-    const match = portfolioBotKnowledge.find(item =>
-      item.keywords.some(keyword => normalized.includes(keyword))
-    );
-
-    if (match) {
-      return match.answer;
-    }
-
-    return fallbackAnswers[Math.floor(Math.random() * fallbackAnswers.length)];
-  }
-
-  function askBot(question) {
+  async function askBot(question) {
     const cleanQuestion = question.trim();
     if (!cleanQuestion) return;
 
     addMessage(cleanQuestion, 'user');
     input.value = '';
+    const loadingMessage = addMessage('Searching Dimitrios\' project knowledge...', 'bot');
 
-    window.setTimeout(() => {
-      addMessage(getBotAnswer(cleanQuestion), 'bot');
-    }, 320);
+    try {
+      const ragAnswer = await askRagBackend(cleanQuestion);
+      loadingMessage.textContent = ragAnswer || getLocalBotAnswer(cleanQuestion);
+    } catch (error) {
+      console.warn('RAG backend unavailable, using local fallback:', error);
+      loadingMessage.textContent = getLocalBotAnswer(cleanQuestion);
+    }
+
+    messages.scrollTop = messages.scrollHeight;
   }
 
   function openChat() {
